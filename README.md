@@ -14,8 +14,8 @@ This will create the two vagrant boxes, then provision them using the puppet cod
 
 Both have a private permanent IP address:
 
-* ha1 - `172.16.10.50`
-* ha2 - `172.16.10.51`
+* ha1 - `192.168.10.50`
+* ha2 - `192.168.10.51`
 
 You should be able to ping both boxes after the initial setup:
 
@@ -27,7 +27,7 @@ ping 172.16.10.51
 Then, the clever part: keepalived is running a virtual IP of `172.16.10.77`, which you should be able to ping with
 
 ```
-ping 172.16.10.77
+ping 192.168.10.77
 ```
 
 Now, with that running that in one terminal window, in another run:
